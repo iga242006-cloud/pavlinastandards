@@ -15,6 +15,38 @@
   onScroll();
 })();
 
+/* ── Mobile hamburger menu ── */
+(function initMobileMenu() {
+  const btn      = document.getElementById('nav-hamburger');
+  const menu     = document.getElementById('mobile-menu');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  const closeBtn = document.getElementById('mobile-menu-close');
+  if (!btn || !menu) return;
+
+  function open() {
+    menu.classList.add('open');
+    backdrop.classList.add('open');
+    btn.classList.add('open');
+    menu.setAttribute('aria-hidden', 'false');
+    btn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    menu.classList.remove('open');
+    backdrop.classList.remove('open');
+    btn.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  btn.addEventListener('click', () => menu.classList.contains('open') ? close() : open());
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+})();
+
 /* ── Language toggle ── */
 (function initLang() {
   const btns = document.querySelectorAll('.lang-btn');

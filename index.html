@@ -210,6 +210,9 @@
       <li><a href="#services"
              data-en="Services"
              data-es="Servicios">Services</a></li>
+      <li><a href="#why-us"
+             data-en="Why Us"
+             data-es="Por Qué Nosotros">Why Us</a></li>
       <li><a href="#doctor"
              data-en="About Dr. Hector"
              data-es="Sobre el Dr. Hector">About Dr. Hector</a></li>
@@ -232,8 +235,43 @@
       <a href="#contact" class="btn-primary"
          data-en="Book a Visit"
          data-es="Hacer una Cita">Book a Visit</a>
+
+      <button class="nav-hamburger" id="nav-hamburger"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+    <nav aria-label="Mobile navigation">
+      <a href="#services" class="mobile-nav-link"
+         data-en="Services" data-es="Servicios">Services</a>
+      <a href="#why-us" class="mobile-nav-link"
+         data-en="Why Dr. Hector" data-es="Por qué Dr. Hector">Why Dr. Hector</a>
+      <a href="#doctor" class="mobile-nav-link"
+         data-en="About" data-es="Nosotros">About</a>
+      <a href="#reviews" class="mobile-nav-link"
+         data-en="Reviews" data-es="Reseñas">Reviews</a>
+      <a href="#faq" class="mobile-nav-link"
+         data-en="FAQ" data-es="Preguntas">FAQ</a>
+      <a href="#contact" class="mobile-nav-link"
+         data-en="Contact" data-es="Contacto">Contact</a>
+    </nav>
+    <div class="mobile-menu-cta">
+      <a href="#contact" class="btn-primary"
+         data-en="Book a Visit"
+         data-es="Hacer una Cita">Book a Visit</a>
+      <a href="tel:+13178882737" class="btn-outline"
+         data-en="Call Us"
+         data-es="Llamar">Call Us</a>
+    </div>
+  </div>
+  <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" aria-hidden="true"></div>
 </header>
 
 <!-- ══════════════════════════════════════════════
@@ -334,6 +372,51 @@
       <span>Direct Primary Care</span>
     </div>
   </div>
+
+  <!-- ══════════════
+       STATS STRIP
+  ══════════════ -->
+  <section class="stats-strip" aria-label="Practice highlights">
+    <div class="section-inner">
+      <div class="stats-strip-grid">
+
+        <div class="strip-stat reveal">
+          <div class="strip-stat-icon" aria-hidden="true">🏅</div>
+          <div class="strip-stat-value">20+</div>
+          <div class="strip-stat-label"
+               data-en="Years Serving Greenwood"
+               data-es="Años Sirviendo a Greenwood">Years Serving Greenwood</div>
+        </div>
+
+        <div class="strip-stat reveal reveal-delay-1">
+          <div class="strip-stat-icon" aria-hidden="true">⭐</div>
+          <div class="strip-stat-value">5.0</div>
+          <div class="strip-stat-label"
+               data-en="Average Google Rating"
+               data-es="Calificación Promedio Google">Average Google Rating</div>
+        </div>
+
+        <div class="strip-stat reveal reveal-delay-2">
+          <div class="strip-stat-icon" aria-hidden="true">📅</div>
+          <div class="strip-stat-value"
+               data-en="Same-Week"
+               data-es="Misma Semana">Same-Week</div>
+          <div class="strip-stat-label"
+               data-en="Appointment Availability"
+               data-es="Disponibilidad de Citas">Appointment Availability</div>
+        </div>
+
+        <div class="strip-stat reveal reveal-delay-3">
+          <div class="strip-stat-icon" aria-hidden="true">🗣️</div>
+          <div class="strip-stat-value">EN · ES</div>
+          <div class="strip-stat-label"
+               data-en="Bilingual Practice"
+               data-es="Práctica Bilingüe">Bilingual Practice</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ══════════════
        PROOF / PULL QUOTE
@@ -480,6 +563,181 @@
                 data-es="Traiga a toda la familia &rarr;">Bring the whole family &rarr;</span>
           <span class="service-number" aria-hidden="true">04</span>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════
+       WHY US
+  ══════════════ -->
+  <section class="why-us-section" id="why-us" aria-labelledby="why-us-heading">
+    <div class="section-inner">
+      <div class="why-us-grid">
+
+        <!-- Left: differentiators -->
+        <div class="why-us-left reveal">
+          <span class="section-eyebrow"
+                data-en="Why Patients Choose Us"
+                data-es="Por Qué los Pacientes Nos Eligen">Why Patients Choose Us</span>
+          <h2 id="why-us-heading" class="section-heading"
+              data-en="Medicine built around <em>you,</em> not the system."
+              data-es="Medicina construida alrededor de <em>ti,</em> no del sistema.">
+            Medicine built around <em>you,</em> not the system.
+          </h2>
+          <p class="section-sub"
+             data-en="Most primary care visits average 7 minutes. Dr. Hector's Direct Primary Care model was designed to fix exactly that."
+             data-es="La mayoría de las visitas de atención primaria duran un promedio de 7 minutos. El modelo de Atención Primaria Directa del Dr. Hector fue diseñado para solucionar exactamente eso.">
+            Most primary care visits average 7 minutes. Dr. Hector's Direct Primary Care model was designed to fix exactly that.
+          </p>
+
+          <div class="why-us-points">
+            <div class="why-point reveal reveal-delay-1">
+              <div class="why-point-num" aria-hidden="true">01</div>
+              <div>
+                <h3 class="why-point-title"
+                    data-en="Unhurried Visits"
+                    data-es="Visitas sin Prisas">Unhurried Visits</h3>
+                <p class="why-point-desc"
+                   data-en="No clock-watching. Appointments are long enough to actually address your concerns — not just the chief complaint."
+                   data-es="Sin mirar el reloj. Las citas son lo suficientemente largas para abordar realmente sus preocupaciones, no solo la queja principal.">
+                  No clock-watching. Appointments are long enough to actually address your concerns — not just the chief complaint.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-point reveal reveal-delay-2">
+              <div class="why-point-num" aria-hidden="true">02</div>
+              <div>
+                <h3 class="why-point-title"
+                    data-en="Direct Doctor Access"
+                    data-es="Acceso Directo al Médico">Direct Doctor Access</h3>
+                <p class="why-point-desc"
+                   data-en="Reach Dr. Hector directly — not a nurse line, not a portal message that gets answered in 3 days. Real access."
+                   data-es="Comuníquese directamente con el Dr. Hector, no con una línea de enfermería ni un mensaje en un portal que se responde en 3 días. Acceso real.">
+                  Reach Dr. Hector directly — not a nurse line, not a portal message that gets answered in 3 days. Real access.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-point reveal reveal-delay-3">
+              <div class="why-point-num" aria-hidden="true">03</div>
+              <div>
+                <h3 class="why-point-title"
+                    data-en="A Doctor Who Listens"
+                    data-es="Un Médico Que Escucha">A Doctor Who Listens</h3>
+                <p class="why-point-desc"
+                   data-en="Dr. Hector caught a heart murmur that four previous physicians missed. Thoroughness isn't a bonus here — it's the standard."
+                   data-es="El Dr. Hector detectó un soplo cardíaco que cuatro médicos anteriores no detectaron. La minuciosidad no es un extra aquí, es el estándar.">
+                  Dr. Hector caught a heart murmur that four previous physicians missed. Thoroughness isn't a bonus here — it's the standard.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: quote card + stats -->
+        <div class="why-us-right reveal reveal-delay-2">
+          <div class="why-quote-card">
+            <div class="why-quote-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="why-quote-text"
+                        data-en="&ldquo;He has been much better than any provider I&rsquo;ve had in the past. Dr. Hector is great, listens and provides excellent care.&rdquo;"
+                        data-es="&ldquo;Ha sido mucho mejor que cualquier proveedor que haya tenido en el pasado. El Dr. Hector es excelente, escucha y brinda una atención excelente.&rdquo;">
+              &ldquo;He has been much better than any provider I&rsquo;ve had in the past. Dr. Hector is great, listens and provides excellent care.&rdquo;
+            </blockquote>
+            <div class="why-quote-author">— Levi Thomas</div>
+          </div>
+
+          <div class="why-stat-pair">
+            <div class="why-stat">
+              <span class="why-stat-val">7 min</span>
+              <span class="why-stat-lbl"
+                    data-en="Avg. traditional visit"
+                    data-es="Visita tradicional promedio">Avg. traditional visit</span>
+            </div>
+            <div class="why-stat-divider" aria-hidden="true">→</div>
+            <div class="why-stat">
+              <span class="why-stat-val why-stat-accent"
+                    data-en="Your time"
+                    data-es="Tu tiempo">Your time</span>
+              <span class="why-stat-lbl"
+                    data-en="With Dr. Hector at DPC"
+                    data-es="Con el Dr. Hector en DPC">With Dr. Hector at DPC</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════
+       COVERAGE / PAYMENT
+  ══════════════ -->
+  <section class="coverage-section" id="coverage" aria-labelledby="coverage-heading">
+    <div class="section-inner">
+      <div class="coverage-header reveal">
+        <span class="section-eyebrow"
+              data-en="Payment &amp; Coverage"
+              data-es="Pago y Cobertura">Payment &amp; Coverage</span>
+        <h2 id="coverage-heading" class="section-heading"
+            data-en="No insurance headaches. <em>Just care.</em>"
+            data-es="Sin dolores de cabeza de seguros. <em>Solo atención.</em>">
+          No insurance headaches. <em>Just care.</em>
+        </h2>
+        <p class="section-sub"
+           data-en="Hector Family Medicine operates on a Direct Primary Care model — a low monthly membership that covers your primary care, with no co-pays, no surprise bills, and no insurance middlemen."
+           data-es="Hector Family Medicine opera con un modelo de Atención Primaria Directa: una membresía mensual baja que cubre su atención primaria, sin copagos, sin facturas sorpresa y sin intermediarios de seguros.">
+          Hector Family Medicine operates on a Direct Primary Care model — a low monthly membership that covers your primary care, with no co-pays, no surprise bills, and no insurance middlemen.
+        </p>
+      </div>
+
+      <div class="coverage-pills reveal reveal-delay-1" role="list" aria-label="Coverage and payment features">
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ HSA / FSA Compatible"
+              data-es="✓ Compatible con HSA / FSA">✓ HSA / FSA Compatible</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ No Co-Pays"
+              data-es="✓ Sin Copagos">✓ No Co-Pays</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ No Surprise Bills"
+              data-es="✓ Sin Facturas Sorpresa">✓ No Surprise Bills</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ Transparent Monthly Fee"
+              data-es="✓ Cuota Mensual Transparente">✓ Transparent Monthly Fee</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ Direct Doctor Access"
+              data-es="✓ Acceso Directo al Médico">✓ Direct Doctor Access</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ Same-Week Appointments"
+              data-es="✓ Citas la Misma Semana">✓ Same-Week Appointments</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ English &amp; Spanish"
+              data-es="✓ Inglés y Español">✓ English &amp; Spanish</span>
+        <span class="coverage-pill coverage-pill-pos" role="listitem"
+              data-en="✓ Accepting New Patients"
+              data-es="✓ Aceptando Nuevos Pacientes">✓ Accepting New Patients</span>
+        <span class="coverage-pill coverage-pill-neg" role="listitem"
+              data-en="✕ No Insurance Billing"
+              data-es="✕ Sin Facturación de Seguros">✕ No Insurance Billing</span>
+        <span class="coverage-pill coverage-pill-neg" role="listitem"
+              data-en="✕ No Referral Required"
+              data-es="✕ Sin Referencia Requerida">✕ No Referral Required</span>
+        <span class="coverage-pill coverage-pill-neg" role="listitem"
+              data-en="✕ No Waiting Weeks"
+              data-es="✕ Sin Esperar Semanas">✕ No Waiting Weeks</span>
+        <span class="coverage-pill coverage-pill-neg" role="listitem"
+              data-en="✕ No 7-Minute Visits"
+              data-es="✕ Sin Visitas de 7 Minutos">✕ No 7-Minute Visits</span>
+      </div>
+
+      <div class="coverage-note reveal reveal-delay-2">
+        <span class="coverage-note-icon" aria-hidden="true">💡</span>
+        <p data-en="We recommend pairing your DPC membership with a catastrophic or high-deductible health plan for specialist referrals and hospitalizations. Most patients save money overall."
+           data-es="Recomendamos combinar su membresía DPC con un plan de salud catastrófico o de alto deducible para referencias a especialistas y hospitalizaciones. La mayoría de los pacientes ahorran dinero en general.">
+          We recommend pairing your DPC membership with a catastrophic or high-deductible health plan for specialist referrals and hospitalizations. Most patients save money overall.
+        </p>
       </div>
     </div>
   </section>
@@ -844,6 +1102,71 @@
   </section>
 
   <!-- ══════════════
+       BOOK / CTA
+  ══════════════ -->
+  <section class="book-cta-section" id="book" aria-labelledby="book-cta-heading">
+    <div class="section-inner">
+      <div class="book-cta-header reveal">
+        <span class="section-eyebrow"
+              data-en="Ready to Get Started?"
+              data-es="¿Listo para Comenzar?">Ready to Get Started?</span>
+        <h2 id="book-cta-heading" class="section-heading"
+            data-en="Three ways to connect <em>today.</em>"
+            data-es="Tres formas de conectarse <em>hoy.</em>">
+          Three ways to connect <em>today.</em>
+        </h2>
+      </div>
+
+      <div class="book-cta-cards">
+        <a href="tel:+13178882737" class="book-cta-card reveal">
+          <div class="book-cta-icon" aria-hidden="true">📞</div>
+          <h3 class="book-cta-title"
+              data-en="Call Us"
+              data-es="Llámenos">Call Us</h3>
+          <p class="book-cta-desc"
+             data-en="Speak directly with our team. Same-week appointments typically available. Mon–Fri 8 AM–5 PM."
+             data-es="Hable directamente con nuestro equipo. Citas generalmente disponibles la misma semana. Lun–Vie 8 AM–5 PM.">
+            Speak directly with our team. Same-week appointments typically available. Mon–Fri 8 AM–5 PM.
+          </p>
+          <span class="book-cta-action">(317) 888-2737 →</span>
+        </a>
+
+        <a href="#contact" class="book-cta-card book-cta-card--accent reveal reveal-delay-2">
+          <div class="book-cta-icon" aria-hidden="true">💻</div>
+          <h3 class="book-cta-title"
+              data-en="Request Online"
+              data-es="Solicitar en Línea">Request Online</h3>
+          <p class="book-cta-desc"
+             data-en="Fill out the form below. We'll confirm your appointment within one business day."
+             data-es="Complete el formulario a continuación. Confirmaremos su cita dentro de un día hábil.">
+            Fill out the form below. We'll confirm your appointment within one business day.
+          </p>
+          <span class="book-cta-action"
+                data-en="Go to form →"
+                data-es="Ir al formulario →">Go to form →</span>
+        </a>
+
+        <a href="https://maps.google.com/?q=1000+N+State+Road+135+Suite+C+Greenwood+IN+46143"
+           target="_blank" rel="noopener noreferrer"
+           class="book-cta-card reveal reveal-delay-4">
+          <div class="book-cta-icon" aria-hidden="true">📍</div>
+          <h3 class="book-cta-title"
+              data-en="Get Directions"
+              data-es="Cómo Llegar">Get Directions</h3>
+          <p class="book-cta-desc"
+             data-en="1000 N State Road 135, Suite C, Greenwood IN 46143. Convenient parking available."
+             data-es="1000 N State Road 135, Suite C, Greenwood IN 46143. Estacionamiento conveniente disponible.">
+            1000 N State Road 135, Suite C, Greenwood IN 46143. Convenient parking available.
+          </p>
+          <span class="book-cta-action"
+                data-en="Open in Maps →"
+                data-es="Abrir en Mapas →">Open in Maps →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════
        CONTACT
   ══════════════ -->
   <section class="contact-section" id="contact" aria-labelledby="contact-heading">
@@ -1072,23 +1395,45 @@
           <a href="#services" data-en="Same-Week Sick Visits" data-es="Visitas de Urgencia">Same-Week Sick Visits</a>
           <a href="#services" data-en="Chronic Care" data-es="Atención Crónica">Chronic Care</a>
           <a href="#services" data-en="Family Medicine" data-es="Medicina Familiar">Family Medicine</a>
+          <a href="#coverage" data-en="DPC / Payment" data-es="DPC / Pago">DPC / Payment</a>
         </div>
         <div class="footer-nav-col">
           <h4 data-en="Practice" data-es="Práctica">Practice</h4>
           <a href="#doctor" data-en="About Dr. Hector" data-es="Sobre el Dr. Hector">About Dr. Hector</a>
-          <a href="#faq" data-en="How DPC Works" data-es="Cómo Funciona DPC">How DPC Works</a>
+          <a href="#why-us" data-en="Why Choose Us" data-es="Por Qué Elegirnos">Why Choose Us</a>
           <a href="#reviews" data-en="Patient Reviews" data-es="Reseñas de Pacientes">Patient Reviews</a>
+          <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
           <a href="#visit" data-en="Plan Your Visit" data-es="Planifique su Visita">Plan Your Visit</a>
         </div>
         <div class="footer-nav-col">
-          <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+          <h4 data-en="Contact Info" data-es="Información de Contacto">Contact Info</h4>
           <a href="tel:+13178882737">(317) 888-2737</a>
           <a href="mailto:info@hectormd.com">info@hectormd.com</a>
           <a href="https://maps.google.com/?q=1000+N+State+Road+135+Suite+C+Greenwood+IN+46143"
-             target="_blank" rel="noopener noreferrer"
-             data-en="Get Directions"
-             data-es="Cómo Llegar">Get Directions</a>
+             target="_blank" rel="noopener noreferrer">
+            1000 N State Rd 135<br>Suite C, Greenwood IN 46143
+          </a>
           <a href="#contact" data-en="Book Appointment" data-es="Hacer una Cita">Book Appointment</a>
+        </div>
+        <div class="footer-nav-col">
+          <h4 data-en="Hours" data-es="Horario">Hours</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-row">
+              <span data-en="Mon – Fri" data-es="Lun – Vie">Mon – Fri</span>
+              <span>8 AM – 5 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span data-en="Saturday" data-es="Sábado">Saturday</span>
+              <span data-en="By appt." data-es="Con cita">By appt.</span>
+            </div>
+            <div class="footer-hours-row">
+              <span data-en="Sunday" data-es="Domingo">Sunday</span>
+              <span data-en="Closed" data-es="Cerrado">Closed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="margin-top:1.25rem; font-size:0.78rem; padding:0.5rem 1rem;"
+             data-en="Book a Visit"
+             data-es="Hacer una Cita">Book a Visit</a>
         </div>
       </nav>
     </div>
