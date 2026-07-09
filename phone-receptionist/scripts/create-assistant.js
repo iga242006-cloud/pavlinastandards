@@ -23,16 +23,31 @@ async function main() {
   const practice = loadPractice(practiceId);
   const assistant = buildAssistant(practice, process.env.PUBLIC_SERVER_URL);
 
-  const res = await fetch('https://api.vapi.ai/assistant', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${process.env.VAPI_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(assistant)
-  });
+  let res;
+  try {
+    res = await fetch('https://api.vapi.ai/assistant', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${process.env.VAPI_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(assistant)
+    });
+  } catch (err) {
+    console.error(`Could not reach api.vapi.ai: ${err.message}`);
+    console.error('Check your network connection (and that nothing is blocking outbound HTTPS to Vapi).');
+    process.exit(1);
+  }
 
-  const data = await res.json();
+  const bodyText = await res.text();
+  let data;
+  try {
+    data = JSON.parse(bodyText);
+  } catch {
+    console.error(`Vapi returned a non-JSON response (HTTP ${res.status}):`);
+    console.error(bodyText.slice(0, 500));
+    process.exit(1);
+  }
 
   if (!res.ok) {
     console.error('Vapi rejected the assistant:', JSON.stringify(data, null, 2));

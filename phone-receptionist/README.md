@@ -80,13 +80,22 @@ queued locally for staff to confirm by phone (see the HIPAA note below).
 
 ## 5. Provision the assistant on Vapi
 
+One-command option — installs deps, starts the server, tunnels it with ngrok if you don't
+already have `PUBLIC_SERVER_URL` set, and provisions the assistant:
+
+```bash
+./scripts/go-live.sh <your-practice-id>
+```
+
+Or step by step:
+
 ```bash
 node scripts/create-assistant.js <your-practice-id>
 ```
 
-This prints an assistant ID. In the Vapi dashboard, go to **Phone Numbers**, buy or import a
-number (or connect an existing Twilio number), and assign it to that assistant. Call the number
-to test.
+Either way, this prints an assistant ID. In the Vapi dashboard, go to **Phone Numbers**, buy or
+import a number (or connect an existing Twilio number), and assign it to that assistant. Call
+the number to test.
 
 Re-run the script any time you edit the practice config or `src/assistantConfig.js` to push
 changes — it creates a new assistant each time; delete the old one in the dashboard once you've
