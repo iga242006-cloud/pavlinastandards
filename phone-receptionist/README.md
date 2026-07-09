@@ -32,9 +32,15 @@ practice never means writing new prompt code.
 
 1. Sign up at vapi.ai and open the dashboard.
 2. Go to **API Keys** and copy the private key.
-3. You'll also need an OpenAI key and (for the default voice/transcriber config here) 11labs and
-   Deepgram — Vapi lets you either bring your own keys for these under **Provider Keys**, or use
-   Vapi's built-in credits to start. Either works with this scaffold unchanged.
+3. The default practice config uses Vapi's own built-in voice (`provider: "vapi"`, no separate
+   account needed) and Deepgram for transcription via Vapi's built-in credits, so you can test
+   end-to-end before connecting any other provider. Swap `voice` in a practice config to
+   `11labs`/`playht`/etc. later for a more distinctive, branded voice.
+
+> **Run everything in this section from your own machine or CI, not from this Claude session.**
+> This session's network egress policy blocks `api.vapi.ai` outright (confirmed — not a key or
+> code issue), so `scripts/create-assistant.js` cannot be run here. Clone this branch locally to
+> provision the assistant.
 
 ## 2. Local setup
 
@@ -65,9 +71,9 @@ Copy the template and fill in real details:
 cp config/practices/example-practice.json config/practices/<your-practice-id>.json
 ```
 
-Edit every field — name, doctors, services, hours, address, phone, insurance, languages,
-`frontDeskTransferNumber` (where "transfer me to a person" sends the call), and
-`voice.voiceId` (an 11labs voice ID from the Vapi or 11labs dashboard).
+Edit every field — name, doctors, services, hours, address, phone, insurance, languages, and
+`frontDeskTransferNumber` (where "transfer me to a person" sends the call). Leave `voice` as the
+built-in `vapi`/`Elliot` default to start, or point it at an 11labs/playht voice ID later.
 
 Leave `calendar.enabled: false` until you've done step 6 — until then, booking requests are
 queued locally for staff to confirm by phone (see the HIPAA note below).

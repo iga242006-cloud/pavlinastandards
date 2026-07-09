@@ -26,8 +26,8 @@
   "bookingNotes": "Same-week appointments are typically available. New patients should have a photo ID and insurance card (if applicable) ready.",
   "emergencyInstructions": "If this is a medical emergency, hang up and dial 911 immediately.",
   "voice": {
-    "provider": "11labs",
-    "voiceId": "REPLACE_WITH_ELEVENLABS_VOICE_ID"
+    "provider": "vapi",
+    "voiceId": "Elliot"
   },
   "calendar": {
     "enabled": false,
