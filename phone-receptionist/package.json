@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "create-assistant": "node scripts/create-assistant.js"
+    "create-assistant": "NODE_USE_ENV_PROXY=1 node scripts/create-assistant.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

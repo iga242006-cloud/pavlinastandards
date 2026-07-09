@@ -81,7 +81,8 @@ fi
 
 echo ""
 echo "Provisioning the assistant for '${PRACTICE_ID}'..."
-PUBLIC_SERVER_URL="$PUBLIC_URL" node scripts/create-assistant.js "$PRACTICE_ID"
+# Node's built-in fetch ignores HTTPS_PROXY/HTTP_PROXY unless this is set (Node >= 22.21).
+PUBLIC_SERVER_URL="$PUBLIC_URL" NODE_USE_ENV_PROXY=1 node scripts/create-assistant.js "$PRACTICE_ID"
 
 echo ""
 echo "Server is still running (PID $SERVER_PID) so tool calls (availability/booking) keep working."

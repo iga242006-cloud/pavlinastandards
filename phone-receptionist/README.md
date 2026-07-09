@@ -90,8 +90,12 @@ already have `PUBLIC_SERVER_URL` set, and provisions the assistant:
 Or step by step:
 
 ```bash
-node scripts/create-assistant.js <your-practice-id>
+npm run create-assistant -- <your-practice-id>
 ```
+
+(This runs `node scripts/create-assistant.js` with `NODE_USE_ENV_PROXY=1` — Node's built-in
+`fetch` silently ignores `HTTPS_PROXY`/`HTTP_PROXY` otherwise, which matters if you're behind a
+corporate proxy. Node 22.21+ required for that flag; unset it if you're not behind a proxy.)
 
 Either way, this prints an assistant ID. In the Vapi dashboard, go to **Phone Numbers**, buy or
 import a number (or connect an existing Twilio number), and assign it to that assistant. Call
