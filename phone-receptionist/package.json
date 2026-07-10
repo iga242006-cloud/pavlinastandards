@@ -1,0 +1,16 @@
+{
+  "name": "aria-phone-receptionist",
+  "version": "1.0.0",
+  "description": "Inbound AI phone receptionist (ARIA) for Pavlina medical practice clients, built on Vapi.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "create-assistant": "NODE_USE_ENV_PROXY=1 node scripts/create-assistant.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1"
+  }
+}

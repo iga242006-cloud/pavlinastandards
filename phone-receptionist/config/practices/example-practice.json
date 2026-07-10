@@ -1,0 +1,38 @@
+{
+  "id": "example-practice",
+  "name": "Example Family Medicine",
+  "doctors": ["Dr. Jane Example"],
+  "specialty": "Family Medicine",
+  "services": [
+    "Annual Physicals",
+    "Same-Week Sick Visits",
+    "Chronic Condition Management",
+    "Preventive Screenings",
+    "Family Health Across Life Stages"
+  ],
+  "hours": {
+    "Monday-Friday": "8:00 AM - 5:00 PM",
+    "Saturday": "By appointment",
+    "Sunday": "Closed"
+  },
+  "timezone": "America/Indiana/Indianapolis",
+  "phone": "+13175550100",
+  "frontDeskTransferNumber": "+13175550100",
+  "address": "123 Main St, Suite A, Anytown, IN 46000",
+  "insuranceAccepted": ["Aetna", "Cigna", "Direct Primary Care / self-pay"],
+  "languagesSpoken": ["English", "Spanish"],
+  "acceptingNewPatients": true,
+  "sameDayAvailability": true,
+  "bookingNotes": "Same-week appointments are typically available. New patients should have a photo ID and insurance card (if applicable) ready.",
+  "emergencyInstructions": "If this is a medical emergency, hang up and dial 911 immediately.",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "Elliot"
+  },
+  "calendar": {
+    "enabled": false,
+    "calendarId": "",
+    "appointmentDurationMinutes": 30,
+    "workingHours": { "start": "09:00", "end": "17:00" }
+  }
+}
