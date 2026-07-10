@@ -1,0 +1,38 @@
+{
+  "id": "hector-family-medicine",
+  "name": "Hector Family Medicine",
+  "doctors": ["Dr. Hector"],
+  "specialty": "Family Medicine (Direct Primary Care)",
+  "services": [
+    "Preventive Care & Annual Physicals",
+    "Same-Week Sick Visits",
+    "Chronic Condition Management",
+    "Medication Reviews & Management",
+    "Family Health Across Life Stages"
+  ],
+  "hours": {
+    "Monday-Friday": "8:00 AM - 5:00 PM",
+    "Saturday": "By appointment",
+    "Sunday": "Closed"
+  },
+  "timezone": "America/Indiana/Indianapolis",
+  "phone": "+13178882737",
+  "frontDeskTransferNumber": "+13178882737",
+  "address": "1000 N State Road 135 Suite C, Greenwood, Indiana 46143",
+  "insuranceAccepted": ["Direct Primary Care membership (no insurance billing)", "HSA/FSA compatible"],
+  "languagesSpoken": ["English", "Spanish"],
+  "acceptingNewPatients": true,
+  "sameDayAvailability": true,
+  "bookingNotes": "Hector Family Medicine is a Direct Primary Care practice — patients pay a low monthly membership directly to the practice instead of billing insurance. Same-week appointments are typically available. New patients should have a photo ID ready; no insurance card needed since visits aren't billed to insurance.",
+  "emergencyInstructions": "If this is a medical emergency, hang up and dial 911 immediately.",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "Elliot"
+  },
+  "calendar": {
+    "enabled": false,
+    "calendarId": "",
+    "appointmentDurationMinutes": 30,
+    "workingHours": { "start": "08:00", "end": "17:00" }
+  }
+}
